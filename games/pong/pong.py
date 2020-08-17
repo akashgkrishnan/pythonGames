@@ -160,3 +160,24 @@ while True:
         ball.setx(-330)
         ball.dx *= -1
         winsound.PlaySound('bounce.wav', winsound.SND_ASYNC)
+
+
+'''
+for the implementation of LRU Cache we use a hybrid data structure
+which is implemented as a combination of hashmap and doubly linked list
+
+hashMap will give us  O(1) retreival
+Insertion in linked list can be done in O(1) time if implemented in a proper way
+
+
+The constructor will initialise the Cache.
+we use the instance varaible cache as dictionary(hash map)
+for storing nodes. This will help us have O(1) retreive time for nodes
+The dictionary cache will be store the new key as key and the linked list
+node as the value
+
+we maintain the current size and also the constructor is initialised with
+maxSize of the cache
+
+the final instance variable we use is the linkedList
+'''
